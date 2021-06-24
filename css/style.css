@@ -36,6 +36,10 @@ p {
   margin: 0 0 10px; 
 }
 
+.text-center {
+  text-align: center;
+}
+
 .img {
   display: block;
   max-width: 100%;
@@ -600,3 +604,65 @@ p {
   width: 16px;
   margin-right: 8px;
 }
+
+ /* Mission
+=================== */
+.mission {
+  padding: 60px 30px;
+  margin-bottom: 30px;
+  margin-top: -27px;
+
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .16);
+  text-align: center;
+
+  position: relative;
+}
+
+.mission-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(0, 0, 0, .05);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mission:before,
+.mission:after {
+  content: "";
+  display: block;
+  width: 41.66666%;
+  height: 2px;
+
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.mission:before {
+  background-color: #004AF2;
+  right: 50%;
+}
+
+.mission:after {
+  background-color: #FC2C2B;
+  left: 50%;
+}
+
+.mission__title {
+  font-size: 30px;
+  font-weight: 900;
+  color: #004AF2;
+}
+
+.mission__subtitle {
+  font-size: 21px;
+  font-weight: 400;
+  color: #585858;
+}
+
