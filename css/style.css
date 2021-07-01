@@ -779,9 +779,8 @@ p {
 =================== */
 .articles {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 0 -15px 30px;
 }
 
 .articles--column {
@@ -799,6 +798,7 @@ p {
 
   width: 100%;
   max-width: 500px;
+  padding: 0 15px;
 }
 
 .articles__title {
@@ -1097,6 +1097,14 @@ p {
     background-position: center top 130px;
   }
 
+  .intro__title {
+    font-size: 90px;
+  }
+
+  .intro__title-amp {
+    font-size: 140px;
+  }
+
   .services__item {
     width: 50%;
   }
@@ -1121,6 +1129,10 @@ p {
 
   .clients__list li {
     max-width: 130px;
+  }
+
+  .footer {
+    background-size: 350px auto;
   }
 }
 
@@ -1175,12 +1187,7 @@ p {
     text-align: center;
   }
 
-  .intro__title {
-    font-size: 90px;
-  }
-
   .intro__title-amp {
-    font-size: 120px;
     right: auto;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
@@ -1219,6 +1226,38 @@ p {
   .team__col:last-child {
     margin-bottom: 0;
   }
+
+  .mission-title {
+    font-size: 70px;
+  }
+
+  .mission {
+    padding: 40px 25px;
+    margin-top: -20px;
+  }
+
+  .mission__title {
+    font-size: 24px;
+  }
+
+  .mission__subtitle {
+    font-size: 18px;
+  }
+
+  .articles {
+    flex-wrap: wrap;
+  }
+
+  .articles__item {
+    max-width: none;
+  }
+
+  .footer {
+    background-size: 250px auto;
+    background-position: left -50px bottom -10px, right -50px bottom -10px;
+  }
+
+  
 }
 
 @media (max-width: 575px) {
@@ -1233,8 +1272,31 @@ p {
     font-size: 90px;
   }
 
+  .request-form__header {
+    padding: 20px;
+  }
+
+  .request-form__title{
+    font-size: 25px;
+  }
+
+  .request-form__content {
+    padding: 20px;
+  }
+
+  .services {
+    padding: 50px 0 10px;
+  }
+
   .services__main-title {
     font-size: 60px;
+    width: 100%;
+
+    text-align: center;
+
+    bottom: auto;
+    right: auto;
+    top: 20px;
   }
 
   .services__item {
@@ -1243,6 +1305,10 @@ p {
 
   .section__title {
     font-size: 35px;
+  }
+
+  .section--last {
+    margin-bottom: 30px;
   }
 
   .clients__list {
@@ -1258,5 +1324,45 @@ p {
 
   .clients__list-logo {
     margin: 0 auto;
+  }
+
+  .mission-title {
+    font-size: 40px;
+  }
+
+  .mission {
+    padding: 30px 25px;
+    margin-top: -12px;
+  }
+
+  .mission__title {
+    font-size: 18px;
+  }
+
+  .mission__subtitle {
+    font-size: 14px;
+  }
+
+  .footer {
+    background-size: 250px auto;
+    background-position: left -130px bottom 0px, right -130px bottom   0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .intro__inner {
+    padding-top: 55px;
+  }
+
+  .intro__title {
+    font-size: 50px;
+  }
+
+  .intro__title-amp {
+    font-size: 80px;
+  }
+
+  .intro__text {
+    margin-bottom: 15px;
   }
 }
