@@ -4,6 +4,10 @@ $(function () {
   let introH = intro.innerHeight();
   let headerH = header.innerHeight();
 
+
+  /* Header scroll
+  ================================================================*/
+
   headerScroll();
 
   $(window).on("scroll resize", function () {
@@ -22,4 +26,20 @@ $(function () {
       header.removeClass("header--dark");
     }
   }
+
+
+  /* Smooth scroll to sections
+  ================================================================*/
+
+  $("[data-scroll]").on("click", function(event) {
+    event.preventDefault();
+    let scrollEl = $(this).data("scroll");
+    let scrollElPosition = $(scrollEl).offset().top;
+
+    $("html, body").animate({
+      scrollTop: scrollElPosition - headerH
+    }, 500)
+
+  })
+
 });
