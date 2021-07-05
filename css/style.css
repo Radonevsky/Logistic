@@ -112,6 +112,8 @@ p {
   padding: 0 15px;
   color: #fff;
   text-decoration: none;
+
+  transition: background-color .2s linear;
 }
 
 .nav__link:not(.active):hover {
