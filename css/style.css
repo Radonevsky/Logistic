@@ -932,6 +932,10 @@ p {
   position: relative;
 
   background-color: #fff;
+  opacity: 0;
+
+  transform: scale(.2);
+  transition: transform .3s ease-out, opacity .3s ease-out;
 }
 
 .modal__header {
@@ -1004,6 +1008,10 @@ p {
   right: -30px;
 
   transition: transform 0.2s linear;
+}
+
+.modal__close:focus {
+  outline: none;
 }
 
 .modal__close:hover {
