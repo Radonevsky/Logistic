@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logistic center</title>
@@ -17,6 +18,7 @@
 
     <!-- Header -->
     <header class="header" id="header">
+
       <div class="container">
         <div class="header__inner">
           <a href="#" data-scroll="#intro">
@@ -40,6 +42,15 @@
 
     <!-- Intro -->
     <div class="intro" id="intro">
+      <div class="intro__slider" id="introSlider">
+        <div class="slider-item">
+          <div class="intro__slider-item" style="background-image: url(img/photo-bg.jpg);"></div>
+        </div>
+        <div class="slider-item">
+          <img class="intro__slider-photo" src="img/photo-bg.jpg" alt="intro">
+        </div>
+      </div>
+        
       <div class="container">
         <div class="intro__inner">
           <div class="request-form request-form--intro">
@@ -78,6 +89,14 @@
               Trans</br>Logistic
             </h1>
           </div>
+
+          <div class="intro__slider-arrows">
+            <button class="intro__slider-btn intro__slider-btn--prev"
+            id="introSliderPrev">Prev</button>
+            <button class="intro__slider-btn intro__slider-btn--next"
+            id="introSliderNext">Next</button>
+          </div>
+
         </div>
         <!--/.intro-inner-->
       </div>
@@ -521,7 +540,9 @@
   </div>
 
   <!-- Javascript -->
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/app.js"></script>
 
 </body>
