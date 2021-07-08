@@ -140,7 +140,7 @@ p {
   margin-bottom: 30px;
   position: relative;
 
-  background-color: #000;
+  background: #0b2a35 url(../img/photo-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -157,6 +157,7 @@ p {
 }
 
 .intro__slider {
+  display: none;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -165,6 +166,11 @@ p {
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.intro__slider.slick-initialized {
+  background: #000;
+  display: block;
 }
 
 .intro__slider .slick-list,
@@ -601,8 +607,16 @@ p {
 
 /* Reviews
 =================== */
- .reviews {
+.reviews {
+  height: 200px;
   position: relative;
+
+  background: url(../img/ajax-loader.gif) no-repeat center;
+}
+
+.reviews.slick-initialized {
+  height: auto;
+  background: none;
 }
 
 .reviews .slick-list {
@@ -616,7 +630,7 @@ p {
   display: block;
   width: 10px;
   height: 100%;
-  
+
   position: absolute;
   top: 0;
   z-index: 3;
@@ -650,7 +664,7 @@ p {
 }
 
 .reviews .slick-dots li.slick-active button {
-  background: #004AF2;
+  background: #004af2;
   box-shadow: 0 0 0 5px rgba(0, 74, 242, 0.11);
 }
 
@@ -660,7 +674,7 @@ p {
   height: 10px;
   padding: 0;
 
-  background: #DBDBDB;
+  background: #dbdbdb;
   border: 0;
   border-radius: 50%;
   cursor: pointer;
@@ -668,7 +682,7 @@ p {
   color: transparent;
   font-size: 0;
 
-  transition: background .2s linear, box-shadow .2s linear;
+  transition: background 0.2s linear, box-shadow 0.2s linear;
 }
 
 .reviews .slick-dots button:focus {
@@ -676,6 +690,7 @@ p {
 }
 
 .reviews__item {
+  display: none;
   padding: 15px;
 }
 
@@ -706,7 +721,6 @@ p {
 .reviews__item:focus {
   outline: none;
 }
-
 
 .reviews__header-content {
   padding-left: 20px;
@@ -1296,7 +1310,7 @@ p {
 
   .clients {
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 
   .clients__logos,
@@ -1384,6 +1398,10 @@ p {
     right: auto;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
+  }
+
+  .intro__slider-arrows {
+    display: none;
   }
 
   .request-form--intro {
@@ -1528,6 +1546,12 @@ p {
 
   .clients__list-logo {
     margin: 0 auto;
+  }
+
+  .clients--love {
+    display: block;
+    margin-left: 0;
+    margin-top: 15px;
   }
 
   .mission-title {
