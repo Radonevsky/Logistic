@@ -601,22 +601,82 @@ p {
 
 /* Reviews
 =================== */
-.reviews {
+ .reviews {
   position: relative;
 }
 
-.reviews:before {
+.reviews .slick-list {
+  padding-top: 20px;
+  z-index: 2;
+}
+
+.reviews:before,
+.reviews:after {
   content: "";
   display: block;
-  width: 92px;
-  height: 126px;
+  width: 10px;
+  height: 100%;
+  
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
 
-  background: url("../img/lines.png") no-repeat;
+.reviews:before {
+  background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+
+  left: 0;
+}
+
+.reviews:after {
+  background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+
+  right: 0;
+}
+
+.reviews .slick-dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   position: absolute;
-  top: -10px;
-  left: 5px;
-  z-index: 1;
+  bottom: -20px;
+  left: 0;
+  z-index: 3;
+}
+
+.reviews .slick-dots li {
+  margin: 0 7.5px;
+}
+
+.reviews .slick-dots li.slick-active button {
+  background: #004AF2;
+  box-shadow: 0 0 0 5px rgba(0, 74, 242, 0.11);
+}
+
+.reviews .slick-dots button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  background: #DBDBDB;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  color: transparent;
+  font-size: 0;
+
+  transition: background .2s linear, box-shadow .2s linear;
+}
+
+.reviews .slick-dots button:focus {
+  outline: none;
+}
+
+.reviews__item {
+  padding: 15px;
 }
 
 .reviews__header {
@@ -629,6 +689,25 @@ p {
   z-index: 2;
 }
 
+.reviews__header:before {
+  content: "";
+  display: block;
+  width: 92px;
+  height: 126px;
+
+  background: url("../img/lines.png") no-repeat;
+
+  position: absolute;
+  top: -13px;
+  left: 2px;
+  z-index: 1;
+}
+
+.reviews__item:focus {
+  outline: none;
+}
+
+
 .reviews__header-content {
   padding-left: 20px;
 
@@ -638,6 +717,8 @@ p {
 .reviews__photo {
   width: 100px;
   height: 100px;
+  position: relative;
+  z-index: 2;
 
   border-radius: 50%;
   border: 5px solid #fff;

@@ -124,6 +124,9 @@ $(function () {
   
   /* Slick slider https://kenwheeler.github.io/slick/
   ================================================================*/
+
+
+  /* Intro slider */
 let introSlider = $('#introSlider');
 
 introSlider.slick({
@@ -143,6 +146,21 @@ $('#introSliderPrev').on('click', function() {
 
 $('#introSliderNext').on('click', function() {
   introSlider.slick('slickNext')
+});
+
+
+/* Reviews slider */
+
+let reviewsSlider = $('#reviewsSlider');
+
+reviewsSlider.slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  autoplay: false,
+  speed: 500
 });
 
 
