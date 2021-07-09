@@ -1,4 +1,27 @@
 $(function () {
+
+    /* Nav toggle on mobile
+  ================================================================*/
+
+  let navToggle = $('#navToggle');
+  let nav = $('#nav');
+
+  navToggle.on("click", function(event) {
+
+    event.preventDefault();
+
+    $("body").toggleClass('show-nav');
+    $(this).toggleClass('active');
+    nav.toggleClass("show");
+
+  });
+
+  $(window).resize(function () { 
+    $("body").removeClass('show-nav');
+    navToggle.removeClass('active');
+    nav.removeClass('show');
+  });
+
   let intro = $("#intro");
   let header = $("#header");
   let introH = intro.innerHeight();
@@ -34,6 +57,10 @@ $(function () {
     event.preventDefault();
     let scrollEl = $(this).data("scroll");
     let scrollElPosition = $(scrollEl).offset().top;
+
+    $("body").removeClass('show-nav');
+    navToggle.removeClass('active');
+    nav.removeClass('show');
 
     $("html, body").animate(
       {
