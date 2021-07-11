@@ -164,7 +164,7 @@ introSlider.slick({
     fade: true,
     autoplay: true,
     autoplaySpeed: 4000,
-    speed: 500
+    speed: 1000
   });
 
 $('#introSliderPrev').on('click', function() {
@@ -186,8 +186,9 @@ reviewsSlider.slick({
   slidesToScroll: 1,
   arrows: false,
   dots: true,
-  autoplay: false,
-  speed: 500
+  autoplay: true,
+  autoplaySpeed: 7000,
+  speed: 1000
 });
 
 
