@@ -1,0 +1,27 @@
+{
+  "name": "logistic",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "jQuery"
+  ],
+  "author": "Radonevsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Radonevsky/Logistic/issues"
+  },
+  "homepage": "https://github.com/Radonevsky/Logistic#readme",
+  "devDependencies": {
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
