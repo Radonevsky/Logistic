@@ -1,3 +1,8 @@
+import * as $ from 'jquery'
+import '../css/style.css';
+import AOS from 'aos';
+import 'slick-carousel';
+
 $(function () {
 
     /* Nav toggle on mobile

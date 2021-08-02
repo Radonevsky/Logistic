@@ -4,10 +4,13 @@
   "description": "Landing page",
   "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production"
   },
+  "browserslist": "> 0.25%, not dead",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/Radonevsky/Logistic.git"
   },
   "keywords": [
     "HTML",
@@ -21,7 +24,21 @@
   },
   "homepage": "https://github.com/Radonevsky/Logistic#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.14.9",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "terser-webpack-plugin": "^5.1.4",
     "webpack": "^5.46.0",
     "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "aos": "^2.3.4",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   }
 }
