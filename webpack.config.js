@@ -37,6 +37,11 @@ module.exports = {
         filename: filename('js'),
         path: path.resolve(__dirname, 'dist')
     },
+    resolve: {
+      alias: {
+          '@': path.resolve(__dirname, 'src')
+      }
+    },
     optimization: optimization(),
     plugins: [
         new HTMLWebpackPlugin({
@@ -47,7 +52,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'src/favicon.ico'),
+                    from: path.resolve(__dirname, 'src'),
                     to: path.resolve(__dirname, 'dist')
                 }
             ]

@@ -24,15 +24,18 @@
   },
   "homepage": "https://github.com/Radonevsky/Logistic#readme",
   "devDependencies": {
-    "@babel/preset-env": "^7.14.9",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.1",
     "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.1.0",
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "terser-webpack-plugin": "^5.1.4",
-    "webpack": "^5.46.0",
+    "webpack": "^5.49.0",
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {
