@@ -19,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="29e5bd2d94fafa0904e14fb91a526f686a594af2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1w5lusYQ4h0uSMErmtEoeFjw2kj" />
@@ -52,6 +57,7 @@
       <workItem from="1627814808907" duration="1869000" />
       <workItem from="1627922900552" duration="6366000" />
       <workItem from="1628441610869" duration="1876000" />
+      <workItem from="1628446180951" duration="198000" />
     </task>
     <servers />
   </component>
@@ -63,7 +69,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
